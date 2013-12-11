@@ -62,6 +62,8 @@ $ component install juliangruber/async-debounce
 
 Returns a decorated version of `fn` that when called calls `fn` only when no further calls have happended for `interval` milliseconds and if it's not currently running. When it's done running and a call has happened while it was still running, it's called again with latest arguments.
 
+`fn` will be given a callback as the last argument, do signal it's done with its computations.
+
 ## License
 
   MIT
