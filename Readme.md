@@ -5,6 +5,10 @@
   
   Debouncing means that given function is only run after no calls to it have happened for `x` milliseconds. With functions that do asynchronous work, i.e. not finish in the same tick, you also want no calls to happen while the function is currently running - limit the concurrency to one - and rerun with new arguments afterwards.
 
+  [![build status](https://secure.travis-ci.org/juliangruber/async-debounce.png)](http://travis-ci.org/juliangruber/async-debounce)
+
+  [![testling badge](https://ci.testling.com/juliangruber/async-debounce.png)](https://ci.testling.com/juliangruber/async-debounce)
+
 ## Example
 
 ```js
